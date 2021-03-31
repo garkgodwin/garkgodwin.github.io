@@ -1,0 +1,177 @@
+#first-box{
+    width: 90%;
+    max-width: 100%;
+    height: 600px;
+    background-color: rgb(0, 21, 59);
+    display: flex;
+    justify-content: center;
+    transition: all 1s ease;
+    transition-delay: 1s;
+    overflow: hidden;
+}
+#first-box h2{
+    position: absolute;
+    top: 60%;
+    color: white;
+    transition: all 1s ease;
+    z-index: 0;
+    transition-delay: 1s;
+}
+#first-box h3{
+    position: absolute;
+    top: 65%;
+    color: white;
+    transition: all 1s ease;
+    z-index: 0;
+    transition-delay: 1s;
+}
+#first-box-emojis{
+    position: absolute;
+    top: 70%;
+    width: 300px;
+    height: 150px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+    z-index: 0;
+    transition-delay: 1s;
+}
+#first-box-emojis .emoji{
+    position: absolute;
+    top: -150px;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+.emoji .image-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#first-box-emojis .emoji h4{
+    color: white;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+/*----------------------------- END OF FIRST BOX ---------------------------*/
+
+
+/* --------------------- COMMON OF BOXES -------------- */
+
+.content-box-sub-box{
+    width: 100%;
+    height: 400px;
+    display: block;
+    padding: 20px;
+    transition: all 1s ease;
+    overflow: hidden;
+    background-color: white;
+    transition: all 1s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+/*--THESE WILL SET THE LOCATION OF SECOND AND FIRST BOX INSIDE THE CONTENT BOX SUB BOX*/
+
+.sub-box-content{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    overflow: hidden;
+}
+.sub-box-content img{
+    width: 100%;
+    height: 100%;
+}
+.sub-box-text h4{
+    font-family: 'PT Sans Caption', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    background-color: rgb(69, 69, 69);
+}
+.sub-box-text h1{
+    font-family: 'PT Sans Caption', sans-serif;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+.sub-box-text p{
+    font-family: 'PT Sans Caption', sans-serif;
+}
+.sub-box-text .p-bottom{
+    position: absolute;
+    bottom: 60px;
+}
+.sub-box-text-link{
+    position: absolute;
+    bottom: 0;
+    width: 250px;
+    height: 50px;
+    background-color: rgb(194, 193, 193);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-decoration: none;
+    color: rgb(0, 21, 59);
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 16px;
+}
+.sub-box-text-link span{
+    transition: all 1s ease;
+    bottom: 2px;
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 21, 59);
+    animation-name: underSlide;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes underSlide{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 200%;
+    }
+}
+
+/* ---------------------------------START OF SECOND-BOX -------------------- */
+#second-box{
+    margin-top: 100px;
+}
+
+/*first child */
+#second-box #my-second-image-box{
+    left: 20px;
+}
+/*second child*/
+#second-box #my-second-text-box{
+    right: 20px;
+    color: rgb(0, 21, 59);
+}
+
+/*----------------------------------START OF THIRD-BOX ----------------------------*/
+#third-box{
+    margin-top: 50px;
+}
+#third-box #my-third-image-box{
+    right: 20px;
+}
+#third-box #my-third-text-box{
+    left: 20px;
+}

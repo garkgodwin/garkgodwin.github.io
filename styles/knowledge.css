@@ -1,0 +1,139 @@
+/*====================Start of Knowledge Main Containers --------------------*/
+#knowledge-box #knowledge-title{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+#knowledge-box #knowledges-box{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#knowledge-box #knowledge-dots{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+/*----------------------- End of Knowledge Main Containers ----------------------- */
+
+/* -- Start of Knowledge Title -- */
+#knowledge-title h1{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    color: rgb(0, 21, 59);
+    font-family: 'PT Sans Caption', sans-serif;
+    border-bottom: 1px solid gray;
+}
+
+/*--------------------------Start of Knowledge Common --------------------- */
+#knowledges-box .knowledge{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+}
+.knowledge-title{
+    background-color: rgb(0, 21, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.knowledge-title h2, .knowledge-title img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(201, 201, 211); 
+    left: -100%;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+.knowledge-title img{
+    left: 0;
+}
+.knowledge-title:hover img{
+    left: 100%;
+}
+.knowledge-title:hover h2{
+    left: 0;
+}
+
+.knowledge-content{
+    height: 450px;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+}
+.knowledge-content div{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.knowledge-content div h3{
+    background-color:rgb(69,69,69);
+    color: white;
+    height: 30px;
+    font-family: 'PT Sans Caption', sans-serif;
+    text-indent: 10px;
+    display: flex;
+    align-items: center;
+}
+.knowledge-content div p{
+    
+    font-family: 'PT Sans Caption', sans-serif;
+    text-indent: 20px;
+}
+/*-----------------------End of Knowledge Commong -----------------------------*/
+
+
+
+/* --Start of knowledge-1-- */
+#knowledge-box #knowledge-1{
+    left: 0;
+
+}
+
+/*---------------------------Start of dots --------------------------------*/
+#knowledge-dots span{
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: gray;
+    position: absolute;
+}
+#knowledge-dots span:nth-child(1){
+    left: 10px;
+    background-color: rgb(0, 21, 59);
+}
+#knowledge-dots span:nth-child(2){
+    left: 60px;
+}
+#knowledge-dots span:nth-child(3){
+    right: 60px;
+}
+#knowledge-dots span:nth-child(4){
+    right: 10px;
+}
